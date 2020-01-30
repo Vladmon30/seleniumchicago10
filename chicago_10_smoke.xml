@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Smoke tests" verbose="2">
+
+    <test name="smoke tests">
+        <packages>
+            <package name="pageObject"/>
+            <package name="tests"/>
+        </packages>
+
+        <classes>
+            <class name="recap.Tabs">
+                <methods>
+                    <exclude name="todo"/>
+                </methods>
+
+            </class>
+        </classes>
+    </test >
+</suite>
